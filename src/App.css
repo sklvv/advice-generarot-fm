@@ -1,38 +1,160 @@
-.App {
+/* ----------------Global---------------- */
+
+* {
+  font-family: 'Manrope',
+  sans-serif;
+  
+}
+body {
+margin: 0;
+padding: 0;
+background-color: hsl(218, 23%, 16%);
+
+}
+
+/* ----------------CardAdvice---------------- */
+
+.card__container {
+width: 500px;
+height: 350px;
+border-radius: 20px;
+background-color:hsl(217, 19%, 24%);
+position: absolute;
+top: 100px;
+left: 0;
+right: 0;
+padding: 40px;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card__title {
+color : hsl(150, 100%, 66%);
+letter-spacing: 0.4em;
+text-transform: uppercase;
+}
+.card__text {
+  color: hsl(193, 38%, 86%);
+  
+  font-size: 28px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card__container svg {
+ padding-top: 13px;
+}
+.card__btn { 
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -26px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  background-color: hsl(150, 100%, 66%);
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* ----------------SearchContainer---------------- */
+
+.search__block {
+  position: absolute ;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 100px;
+  width: 200px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  opacity: 50%;
+  
+}
+
+.search__id {
+color: hsl(150, 100%, 66%);
+opacity: 95%;
+text-decoration: underline;
+cursor: pointer;
+}
+
+/* ----------------Modal---------------- */
+
+.modal__container {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%, 50%);
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.modal__items {
+width: 300px;
+height: 180px;
+background-color:hsl(217, 19%, 24%);
+border: none;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.modal__input {
+border-radius: 5px;
+border: none;
+outline: none;
+background-color: hsl(193, 38%, 86%);
+margin-bottom: 17%;
+margin-top: 17%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal__actions {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.modal__actions div {
+  color: hsl(150, 100%, 66%);
+  border: 1px solid hsl(150, 100%, 66%, 0%);
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+.modal__actions div:hover {
+  border: 1px solid hsl(150, 100%, 66%);
+}
+
+/* ----------------Loader---------------- */
+
+.loader__container {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%, 50%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  width: 40px;
+  height: 40px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
 }
