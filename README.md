@@ -1,15 +1,31 @@
-# Advice generator
+# Advice Generator FM
 
-This project was [https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db]
+## 📣 Contents
 
-# Redux
+- [About](#about)
+- [Installing](#installing)
+- [Built Using](#built_using)
 
-For storage states
+## 😎 About <a name = "about"></a>
 
-# Axios
+The perfect [project](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.
 
-For fetching data
+## 💽 Installing <a name = "installing"></a>
 
-# Framer motion
+Go to project folder and type in console:
 
-For loader
+```
+git clone https://github.com/sklvv/advice-generarot-fm.git
+```
+
+Install dependencies with:
+
+```
+npm install
+```
+
+Start dev server:
+
+```
+npm start
+```
